@@ -8,17 +8,26 @@ public class MultiplayerShooter : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", 
+			"CoreUObject", 
+			"Engine", 
+			"InputCore",
+			"EnhancedInput"
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
 		PublicIncludePaths.AddRange(new string[] 
 		{
-			"MultiplayerShooter/Public/Player", 
-			"MultiplayerShooter/Public/Components",
-			"MultiplayerShooter/Public/Dev",
-			"MultiplayerShooter/Public/Weapon",
-			"MultiplayerShooter/Public/UI"
+			"MultiplayerShooter/Input",
+			"MultiplayerShooter/Player", 
+			"MultiplayerShooter/Components",
+			"MultiplayerShooter/Dev",
+			"MultiplayerShooter/Weapon",
+			"MultiplayerShooter/UI",
+			"MultiplayerShooter/Gameplay",
 		});
 
 		// Uncomment if you are using Slate UI
