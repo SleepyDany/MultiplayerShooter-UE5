@@ -68,7 +68,7 @@ protected:
     TObjectPtr<UWeaponInputDataAsset> WeaponInputDataAsset;
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Settings|Input")
     TObjectPtr<UInputMappingContext> WeaponInputMapping;
-
+    
 private:
     void Look(const FInputActionValue& InputActionValue);
     void Move(const FInputActionValue& InputActionValue);
